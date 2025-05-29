@@ -1,0 +1,1016 @@
+{
+	"info": {
+		"_postman_id": "751e6242-dde8-4641-a101-42c7ca3e18dc",
+		"name": "pruebasEndpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45384543"
+	},
+	"item": [
+		{
+			"name": "Clientes",
+			"item": [
+				{
+					"name": "consultarCliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "consultarCliente",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/clientes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"clientes"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 29 May 2025 19:09:55 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"clienteid\": 1,\n        \"persona\": {\n            \"id\": 1,\n            \"nombre\": \"Juan Carlos Pérez\",\n            \"genero\": \"MASCULINO\",\n            \"edad\": 35,\n            \"identificacion\": \"1234567890\",\n            \"direccion\": \"Av. Amazonas 123, Quito\",\n            \"telefono\": \"0998877665\",\n            \"version\": 0\n        },\n        \"contrasena\": \"password123\",\n        \"estado\": true,\n        \"version\": null\n    },\n    {\n        \"clienteid\": 2,\n        \"persona\": {\n            \"id\": 2,\n            \"nombre\": \"María Elena López\",\n            \"genero\": \"FEMENINO\",\n            \"edad\": 28,\n            \"identificacion\": \"0987654321\",\n            \"direccion\": \"Calle 10 de Agosto 456, Quito\",\n            \"telefono\": \"0987654321\",\n            \"version\": 0\n        },\n        \"contrasena\": \"segura456\",\n        \"estado\": true,\n        \"version\": null\n    },\n    {\n        \"clienteid\": 3,\n        \"persona\": {\n            \"id\": 3,\n            \"nombre\": \"Carlos Alberto Rodríguez\",\n            \"genero\": \"MASCULINO\",\n            \"edad\": 42,\n            \"identificacion\": \"1122334455\",\n            \"direccion\": \"Via a Samborondón 789, Guayaquil\",\n            \"telefono\": \"0976543210\",\n            \"version\": 0\n        },\n        \"contrasena\": \"clave789\",\n        \"estado\": true,\n        \"version\": null\n    },\n    {\n        \"clienteid\": 4,\n        \"persona\": {\n            \"id\": 4,\n            \"nombre\": \"Ana Patricia Morales\",\n            \"genero\": \"FEMENINO\",\n            \"edad\": 31,\n            \"identificacion\": \"5544332211\",\n            \"direccion\": \"Calle Bolívar 321, Cuenca\",\n            \"telefono\": \"0965432109\",\n            \"version\": 0\n        },\n        \"contrasena\": \"secret321\",\n        \"estado\": true,\n        \"version\": null\n    },\n    {\n        \"clienteid\": 5,\n        \"persona\": {\n            \"id\": 5,\n            \"nombre\": \"Luis Fernando García\",\n            \"genero\": \"MASCULINO\",\n            \"edad\": 29,\n            \"identificacion\": \"1357924680\",\n            \"direccion\": \"Av. 6 de Diciembre 890, Quito\",\n            \"telefono\": \"0987123456\",\n            \"version\": 0\n        },\n        \"contrasena\": \"luis2024\",\n        \"estado\": true,\n        \"version\": null\n    },\n    {\n        \"clienteid\": 6,\n        \"persona\": {\n            \"id\": 6,\n            \"nombre\": \"Carmen Isabel Vásquez\",\n            \"genero\": \"FEMENINO\",\n            \"edad\": 45,\n            \"identificacion\": \"2468135790\",\n            \"direccion\": \"Calle García Moreno 567, Loja\",\n            \"telefono\": \"0976234567\",\n            \"version\": 0\n        },\n        \"contrasena\": \"carmen567\",\n        \"estado\": true,\n        \"version\": null\n    },\n    {\n        \"clienteid\": 7,\n        \"persona\": {\n            \"id\": 7,\n            \"nombre\": \"Roberto Miguel Torres\",\n            \"genero\": \"MASCULINO\",\n            \"edad\": 38,\n            \"identificacion\": \"3691470258\",\n            \"direccion\": \"Av. Francisco de Orellana 234, Guayaquil\",\n            \"telefono\": \"0965345678\",\n            \"version\": 0\n        },\n        \"contrasena\": \"roberto890\",\n        \"estado\": true,\n        \"version\": null\n    },\n    {\n        \"clienteid\": 10,\n        \"persona\": {\n            \"id\": 10,\n            \"nombre\": \"Valentina Cristina Reyes\",\n            \"genero\": \"FEMENINO\",\n            \"edad\": 39,\n            \"identificacion\": \"6048271359\",\n            \"direccion\": \"Calle Olmedo 789, Riobamba\",\n            \"telefono\": \"0932678901\",\n            \"version\": 0\n        },\n        \"contrasena\": \"vale789\",\n        \"estado\": true,\n        \"version\": null\n    },\n    {\n        \"clienteid\": 13,\n        \"persona\": {\n            \"id\": 13,\n            \"nombre\": \"Pepe Jaramillo\",\n            \"genero\": \"Masculino\",\n            \"edad\": 95,\n            \"identificacion\": \"1712131122\",\n            \"direccion\": \"Av. Galo Plaza Lasso N22-222\",\n            \"telefono\": \"098000011\",\n            \"version\": 0\n        },\n        \"contrasena\": \"Mipass2020\",\n        \"estado\": true,\n        \"version\": null\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "EditarCliente",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"persona\": {\r\n    \"nombre\": \"Eloy Alfaro\",\r\n    \"genero\": \"Masculino\",\r\n    \"edad\": 140,\r\n    \"identificacion\": \"1700001415\",\r\n    \"direccion\": \"Av. Galo Plaza grande N60-200\",\r\n    \"telefono\": \"0980000000\"\r\n  },\r\n  \"contrasena\": \"Mipass1910\",\r\n  \"estado\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/clientes/9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"9"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "EditarCliente",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"persona\": {\r\n    \"nombre\": \"Eloy Alfaro\",\r\n    \"genero\": \"Masculino\",\r\n    \"edad\": 140,\r\n    \"identificacion\": \"1700001415\",\r\n    \"direccion\": \"Av. Galo Plaza grande N60-200\",\r\n    \"telefono\": \"0980000000\"\r\n  },\r\n  \"contrasena\": \"Mipass1910\",\r\n  \"estado\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/clientes/13",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"clientes",
+										"13"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 29 May 2025 19:11:12 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"clienteid\": 13,\n    \"persona\": {\n        \"id\": 13,\n        \"nombre\": \"Eloy Alfaro\",\n        \"genero\": \"Masculino\",\n        \"edad\": 140,\n        \"identificacion\": \"1700001415\",\n        \"direccion\": \"Av. Galo Plaza grande N60-200\",\n        \"telefono\": \"0980000000\",\n        \"version\": 0\n    },\n    \"contrasena\": \"Mipass1910\",\n    \"estado\": true,\n    \"version\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "agregarCliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"persona\": {\r\n    \"nombre\": \"Julio Jaramillo\",\r\n    \"genero\": \"Masculino\",\r\n    \"edad\": 90,\r\n    \"identificacion\": \"1712131111\",\r\n    \"direccion\": \"Av. Galo Plaza Lasso N22-222\",\r\n    \"telefono\": \"098000011\"\r\n  },\r\n  \"contrasena\": \"Mipass2020\",\r\n  \"estado\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "agregarCliente",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"persona\": {\r\n    \"nombre\": \"Paul Salazar\",\r\n    \"genero\": \"MASCULINO\",\r\n    \"edad\": 32,\r\n    \"identificacion\": \"1712345689\",\r\n    \"direccion\": \"AV. AMAZONAS Y COLON\",\r\n    \"telefono\": \"0984717474\"\r\n  },\r\n  \"contrasena\": \"Paul12345\",\r\n  \"estado\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/clientes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"clientes"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 29 May 2025 19:14:00 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"clienteid\": 14,\n    \"persona\": {\n        \"id\": 14,\n        \"nombre\": \"Paul Salazar\",\n        \"genero\": \"MASCULINO\",\n        \"edad\": 32,\n        \"identificacion\": \"1712345689\",\n        \"direccion\": \"AV. AMAZONAS Y COLON\",\n        \"telefono\": \"0984717474\",\n        \"version\": 0\n    },\n    \"contrasena\": \"Paul12345\",\n    \"estado\": true,\n    \"version\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "eliminarCliente",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/clientes/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"8"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "eliminarCliente",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/clientes/13",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"clientes",
+										"13"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 29 May 2025 19:14:46 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Cuentas",
+			"item": [
+				{
+					"name": "consultarCuenta",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/cuentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "consultarCuenta",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/cuentas/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cuentas",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 29 May 2025 19:16:20 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"numerocuenta\": 4,\n    \"clienteid\": 3,\n    \"tipocuenta\": \"AHORRO\",\n    \"saldoinicial\": 800,\n    \"estado\": true,\n    \"nombreCliente\": \"Carlos Alberto Rodríguez\",\n    \"version\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "crearCuenta",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"clienteid\": 9,\r\n  \"tipocuenta\": \"AHORRO\",\r\n  \"saldoinicial\": 1000.00,\r\n  \"estado\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cuentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "crearCuenta",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"clienteid\": 14,\r\n  \"tipocuenta\": \"CORRIENTE\",\r\n  \"saldoinicial\": 0.00,\r\n  \"estado\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/cuentas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cuentas"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 29 May 2025 19:17:00 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"numerocuenta\": 21,\n    \"clienteid\": 14,\n    \"tipocuenta\": \"CORRIENTE\",\n    \"saldoinicial\": 0,\n    \"estado\": true,\n    \"nombreCliente\": \"Paul Salazar\",\n    \"version\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "editarCuenta",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"clienteid\": 14,\r\n  \"tipocuenta\": \"AHORRO\",\r\n  \"saldoinicial\": 0.00,\r\n  \"estado\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cuentas/21",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas",
+								"21"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "editarCuenta",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"clienteid\": 14,\r\n  \"tipocuenta\": \"AHORRO\",\r\n  \"saldoinicial\": 0.00,\r\n  \"estado\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/cuentas/21",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cuentas",
+										"21"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 29 May 2025 19:22:33 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"numerocuenta\": 21,\n    \"clienteid\": 14,\n    \"tipocuenta\": \"AHORRO\",\n    \"saldoinicial\": 0,\n    \"estado\": true,\n    \"nombreCliente\": \"Paul Salazar\",\n    \"version\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "eliminarCuenta",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cuentas/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas",
+								"6"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "eliminarCuenta",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/cuentas/20",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cuentas",
+										"20"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 29 May 2025 19:09:38 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Movimientos",
+			"item": [
+				{
+					"name": "consultarMovimiento",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/movimientos/cuenta/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos",
+								"cuenta",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "consultarMovimiento",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/movimientos/cuenta/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"movimientos",
+										"cuenta",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 29 May 2025 19:24:32 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 8,\n        \"numerocuenta\": 4,\n        \"fecha\": \"2025-05-28T15:08:25.620726-05:00\",\n        \"tipomovimiento\": \"DEBITO\",\n        \"valor\": -1000,\n        \"saldo\": 4000,\n        \"nombreCliente\": \"Carlos Alberto Rodríguez\",\n        \"tipoCuenta\": \"AHORRO\",\n        \"version\": null\n    },\n    {\n        \"id\": 9,\n        \"numerocuenta\": 4,\n        \"fecha\": \"2025-05-28T15:08:25.620726-05:00\",\n        \"tipomovimiento\": \"CREDITO\",\n        \"valor\": 2000,\n        \"saldo\": 6000,\n        \"nombreCliente\": \"Carlos Alberto Rodríguez\",\n        \"tipoCuenta\": \"AHORRO\",\n        \"version\": null\n    },\n    {\n        \"id\": 10,\n        \"numerocuenta\": 4,\n        \"fecha\": \"2025-05-28T15:08:25.620726-05:00\",\n        \"tipomovimiento\": \"DEBITO\",\n        \"valor\": -500,\n        \"saldo\": 5500,\n        \"nombreCliente\": \"Carlos Alberto Rodríguez\",\n        \"tipoCuenta\": \"AHORRO\",\n        \"version\": null\n    },\n    {\n        \"id\": 29,\n        \"numerocuenta\": 4,\n        \"fecha\": \"2025-05-28T15:32:24.278909-05:00\",\n        \"tipomovimiento\": \"CREDITO\",\n        \"valor\": 314.26,\n        \"saldo\": 5814.26,\n        \"nombreCliente\": \"Carlos Alberto Rodríguez\",\n        \"tipoCuenta\": \"AHORRO\",\n        \"version\": null\n    },\n    {\n        \"id\": 30,\n        \"numerocuenta\": 4,\n        \"fecha\": \"2025-05-28T15:32:28.736751-05:00\",\n        \"tipomovimiento\": \"CREDITO\",\n        \"valor\": 314.26,\n        \"saldo\": 6128.52,\n        \"nombreCliente\": \"Carlos Alberto Rodríguez\",\n        \"tipoCuenta\": \"AHORRO\",\n        \"version\": null\n    },\n    {\n        \"id\": 34,\n        \"numerocuenta\": 4,\n        \"fecha\": \"2025-05-29T10:28:18.979068-05:00\",\n        \"tipomovimiento\": \"DEBITO\",\n        \"valor\": -125,\n        \"saldo\": 6003.52,\n        \"nombreCliente\": \"Carlos Alberto Rodríguez\",\n        \"tipoCuenta\": \"AHORRO\",\n        \"version\": null\n    },\n    {\n        \"id\": 35,\n        \"numerocuenta\": 4,\n        \"fecha\": \"2025-05-29T11:00:27.62085-05:00\",\n        \"tipomovimiento\": \"DEBITO\",\n        \"valor\": -10,\n        \"saldo\": 5993.52,\n        \"nombreCliente\": \"Carlos Alberto Rodríguez\",\n        \"tipoCuenta\": \"AHORRO\",\n        \"version\": null\n    },\n    {\n        \"id\": 36,\n        \"numerocuenta\": 4,\n        \"fecha\": \"2025-05-29T11:00:54.35549-05:00\",\n        \"tipomovimiento\": \"CREDITO\",\n        \"valor\": 10,\n        \"saldo\": 6003.52,\n        \"nombreCliente\": \"Carlos Alberto Rodríguez\",\n        \"tipoCuenta\": \"AHORRO\",\n        \"version\": null\n    },\n    {\n        \"id\": 37,\n        \"numerocuenta\": 4,\n        \"fecha\": \"2025-05-29T11:09:04.904132-05:00\",\n        \"tipomovimiento\": \"DEBITO\",\n        \"valor\": -10,\n        \"saldo\": 5993.52,\n        \"nombreCliente\": \"Carlos Alberto Rodríguez\",\n        \"tipoCuenta\": \"AHORRO\",\n        \"version\": null\n    },\n    {\n        \"id\": 38,\n        \"numerocuenta\": 4,\n        \"fecha\": \"2025-05-29T11:09:10.130308-05:00\",\n        \"tipomovimiento\": \"DEBITO\",\n        \"valor\": -10,\n        \"saldo\": 5983.52,\n        \"nombreCliente\": \"Carlos Alberto Rodríguez\",\n        \"tipoCuenta\": \"AHORRO\",\n        \"version\": null\n    },\n    {\n        \"id\": 40,\n        \"numerocuenta\": 4,\n        \"fecha\": \"2025-05-29T11:22:11.294112-05:00\",\n        \"tipomovimiento\": \"DEBITO\",\n        \"valor\": -5,\n        \"saldo\": 5978.52,\n        \"nombreCliente\": \"Carlos Alberto Rodríguez\",\n        \"tipoCuenta\": \"AHORRO\",\n        \"version\": null\n    },\n    {\n        \"id\": 41,\n        \"numerocuenta\": 4,\n        \"fecha\": \"2025-05-29T11:22:18.591477-05:00\",\n        \"tipomovimiento\": \"DEBITO\",\n        \"valor\": -5,\n        \"saldo\": 5973.52,\n        \"nombreCliente\": \"Carlos Alberto Rodríguez\",\n        \"tipoCuenta\": \"AHORRO\",\n        \"version\": null\n    },\n    {\n        \"id\": 42,\n        \"numerocuenta\": 4,\n        \"fecha\": \"2025-05-29T11:22:19.901208-05:00\",\n        \"tipomovimiento\": \"DEBITO\",\n        \"valor\": -5,\n        \"saldo\": 5968.52,\n        \"nombreCliente\": \"Carlos Alberto Rodríguez\",\n        \"tipoCuenta\": \"AHORRO\",\n        \"version\": null\n    },\n    {\n        \"id\": 43,\n        \"numerocuenta\": 4,\n        \"fecha\": \"2025-05-29T11:22:32.024388-05:00\",\n        \"tipomovimiento\": \"CREDITO\",\n        \"valor\": 5,\n        \"saldo\": 5973.52,\n        \"nombreCliente\": \"Carlos Alberto Rodríguez\",\n        \"tipoCuenta\": \"AHORRO\",\n        \"version\": null\n    },\n    {\n        \"id\": 44,\n        \"numerocuenta\": 4,\n        \"fecha\": \"2025-05-29T11:22:33.554167-05:00\",\n        \"tipomovimiento\": \"CREDITO\",\n        \"valor\": 5,\n        \"saldo\": 5978.52,\n        \"nombreCliente\": \"Carlos Alberto Rodríguez\",\n        \"tipoCuenta\": \"AHORRO\",\n        \"version\": null\n    },\n    {\n        \"id\": 45,\n        \"numerocuenta\": 4,\n        \"fecha\": \"2025-05-29T11:30:13.220849-05:00\",\n        \"tipomovimiento\": \"CREDITO\",\n        \"valor\": 5,\n        \"saldo\": 5983.52,\n        \"nombreCliente\": \"Carlos Alberto Rodríguez\",\n        \"tipoCuenta\": \"AHORRO\",\n        \"version\": null\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "crearMovimiento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numerocuenta\": 4,\r\n  \"tipomovimiento\": \"CREDITO\",\r\n  \"valor\": 314.26\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movimientos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "crearMovimiento",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"numerocuenta\": 4,\r\n  \"tipomovimiento\": \"DEBITO\",\r\n  \"valor\": 125.00\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/movimientos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"movimientos"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 29 May 2025 15:28:19 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 34,\n    \"numerocuenta\": 4,\n    \"fecha\": \"2025-05-29T10:28:18.9790677-05:00\",\n    \"tipomovimiento\": \"DEBITO\",\n    \"valor\": -125,\n    \"saldo\": 6003.52,\n    \"nombreCliente\": \"Carlos Alberto Rodríguez\",\n    \"tipoCuenta\": \"CORRIENTE\",\n    \"version\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "eliminarMovimiento",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/movimientos/43",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos",
+								"43"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "eliminarMovimiento",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/movimientos/43",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"movimientos",
+										"43"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 29 May 2025 19:27:19 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "SaldoNoDisponible",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numerocuenta\": 21,\r\n  \"tipomovimiento\": \"DEBITO\",\r\n  \"valor\": 100.00\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movimientos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "SaldoNoDisponible",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"numerocuenta\": 20,\r\n  \"tipomovimiento\": \"DEBITO\",\r\n  \"valor\": 100.00\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/movimientos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"movimientos"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 29 May 2025 15:20:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"timestamp\": \"2025-05-29T10:20:47.4334519-05:00\",\n    \"status\": 400,\n    \"error\": \"Bad Request\",\n    \"message\": \"Saldo no disponible\",\n    \"path\": \"/movimientos\",\n    \"errors\": []\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Reportes",
+			"item": [
+				{
+					"name": "generarReporte",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/reportes?clienteid=3&fechaInicio=2025-05-01&fechaFin=2025-05-31",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reportes"
+							],
+							"query": [
+								{
+									"key": "clienteid",
+									"value": "3"
+								},
+								{
+									"key": "fechaInicio",
+									"value": "2025-05-01"
+								},
+								{
+									"key": "fechaFin",
+									"value": "2025-05-31"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "generarReporte",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/reportes?clienteid=3&fechaInicio=2025-05-01&fechaFin=2025-05-31",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"reportes"
+									],
+									"query": [
+										{
+											"key": "clienteid",
+											"value": "3"
+										},
+										{
+											"key": "fechaInicio",
+											"value": "2025-05-01"
+										},
+										{
+											"key": "fechaFin",
+											"value": "2025-05-31"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 29 May 2025 19:32:57 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"nombreCliente\": \"Carlos Alberto Rodríguez\",\n    \"identificacion\": \"1122334455\",\n    \"cuentas\": [\n        {\n            \"numeroCuenta\": 4,\n            \"tipoCuenta\": \"AHORRO\",\n            \"saldoDisponible\": 800,\n            \"movimientos\": [\n                {\n                    \"fecha\": \"2025-05-28T15:08:25.620726-05:00\",\n                    \"tipoMovimiento\": \"DEBITO\",\n                    \"valor\": -500,\n                    \"saldo\": 5500,\n                    \"version\": null\n                },\n                {\n                    \"fecha\": \"2025-05-28T15:08:25.620726-05:00\",\n                    \"tipoMovimiento\": \"DEBITO\",\n                    \"valor\": -1000,\n                    \"saldo\": 4000,\n                    \"version\": null\n                },\n                {\n                    \"fecha\": \"2025-05-28T15:08:25.620726-05:00\",\n                    \"tipoMovimiento\": \"CREDITO\",\n                    \"valor\": 2000,\n                    \"saldo\": 6000,\n                    \"version\": null\n                },\n                {\n                    \"fecha\": \"2025-05-28T15:32:24.278909-05:00\",\n                    \"tipoMovimiento\": \"CREDITO\",\n                    \"valor\": 314.26,\n                    \"saldo\": 5814.26,\n                    \"version\": null\n                },\n                {\n                    \"fecha\": \"2025-05-28T15:32:28.736751-05:00\",\n                    \"tipoMovimiento\": \"CREDITO\",\n                    \"valor\": 314.26,\n                    \"saldo\": 6128.52,\n                    \"version\": null\n                },\n                {\n                    \"fecha\": \"2025-05-29T10:28:18.979068-05:00\",\n                    \"tipoMovimiento\": \"DEBITO\",\n                    \"valor\": -125,\n                    \"saldo\": 6003.52,\n                    \"version\": null\n                },\n                {\n                    \"fecha\": \"2025-05-29T11:00:27.62085-05:00\",\n                    \"tipoMovimiento\": \"DEBITO\",\n                    \"valor\": -10,\n                    \"saldo\": 5993.52,\n                    \"version\": null\n                },\n                {\n                    \"fecha\": \"2025-05-29T11:00:54.35549-05:00\",\n                    \"tipoMovimiento\": \"CREDITO\",\n                    \"valor\": 10,\n                    \"saldo\": 6003.52,\n                    \"version\": null\n                },\n                {\n                    \"fecha\": \"2025-05-29T11:09:04.904132-05:00\",\n                    \"tipoMovimiento\": \"DEBITO\",\n                    \"valor\": -10,\n                    \"saldo\": 5993.52,\n                    \"version\": null\n                },\n                {\n                    \"fecha\": \"2025-05-29T11:09:10.130308-05:00\",\n                    \"tipoMovimiento\": \"DEBITO\",\n                    \"valor\": -10,\n                    \"saldo\": 5983.52,\n                    \"version\": null\n                },\n                {\n                    \"fecha\": \"2025-05-29T11:22:11.294112-05:00\",\n                    \"tipoMovimiento\": \"DEBITO\",\n                    \"valor\": -5,\n                    \"saldo\": 5978.52,\n                    \"version\": null\n                },\n                {\n                    \"fecha\": \"2025-05-29T11:22:18.591477-05:00\",\n                    \"tipoMovimiento\": \"DEBITO\",\n                    \"valor\": -5,\n                    \"saldo\": 5973.52,\n                    \"version\": null\n                },\n                {\n                    \"fecha\": \"2025-05-29T11:22:19.901208-05:00\",\n                    \"tipoMovimiento\": \"DEBITO\",\n                    \"valor\": -5,\n                    \"saldo\": 5968.52,\n                    \"version\": null\n                },\n                {\n                    \"fecha\": \"2025-05-29T11:22:33.554167-05:00\",\n                    \"tipoMovimiento\": \"CREDITO\",\n                    \"valor\": 5,\n                    \"saldo\": 5978.52,\n                    \"version\": null\n                },\n                {\n                    \"fecha\": \"2025-05-29T11:30:13.220849-05:00\",\n                    \"tipoMovimiento\": \"CREDITO\",\n                    \"valor\": 5,\n                    \"saldo\": 5983.52,\n                    \"version\": null\n                },\n                {\n                    \"fecha\": \"2025-05-29T14:25:50.191647-05:00\",\n                    \"tipoMovimiento\": \"DEBITO\",\n                    \"valor\": -188,\n                    \"saldo\": 5795.52,\n                    \"version\": null\n                }\n            ]\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
